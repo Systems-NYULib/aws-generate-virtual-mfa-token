@@ -11,6 +11,6 @@ Generate new MFA token
 
     $ ./generate-mfa-cli-token.sh <user> <token>
 
-After token is generated, you can run the CLI commands
+After token is generated, you can run the CLI commands (you have to append "--profile mfa" to the end of command to use the token)
 
     $ aws s3 ls --profile mfa
