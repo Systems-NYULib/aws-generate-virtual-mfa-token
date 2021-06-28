@@ -14,3 +14,7 @@ Generate new MFA token
 After token is generated, you can run the CLI commands (you have to append "--profile mfa" to the end of each command to use the token)
 
     $ aws s3 ls --profile mfa
+
+If you want to generate token as one liner using curl. First get the proper url to the file. To do that click on the file, then click on 'raw' upper right corner. Grab the url. Then execute below command using that url.
+
+    $ curl https://raw.githubusercontent.com/Systems-NYULib/aws-get-mfa-token/main/generate-mfa-cli-token.sh | bash -s <user> <token>
